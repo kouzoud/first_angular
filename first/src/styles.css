@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#333;
+
+  }
+  
+  .container {
+    margin: 19px;
+    padding: 5px;
+    background-color: azure;
+    border: #333;
+    border-radius: 100px;
+    color: black;
+  }
+  
+  .text-light {
+    color: #1c1e1f; /* Texte clair */
+  }
+  
+  .div-button {
+    background-color: rgb(220, 220, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espacement uniforme entre les boutons */
+    margin-top: 20px;
+  }
+  
+  input{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(202, 214, 210);
+  }
+  
+  input:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ombre autour du bouton */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .father {
+    display: flex;
+    flex-wrap: wrap; /* Permet de revenir à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 40px; /* Espacement entre les cartes */
+    margin-top: 20px; /* Ajoute de l'espace au-dessus de la section des cartes */
+    background-color: antiquewhite;
+    width: 70%;
+    margin-left: 20%;
+  }
+  
+  .first {
+    width: 200px; /* Largeur fixe pour chaque carte */
+    background-color: red;
+    border-radius: 8px; /* Ajouter des bords arrondis */
+  }
+  
+  .cart {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .img img {
+    width: 95%;
+    height: 80px; /* Ajuster la taille de l'image */
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  
+  .power h1,
+  .power p {
+    text-align: center;
+    color: #fff; /* Couleur du texte dans la carte */
+  }
+  

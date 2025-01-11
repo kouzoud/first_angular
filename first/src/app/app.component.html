@@ -1,0 +1,25 @@
+<div class="container" >
+  <h2 class="text-light" >App hero</h2>
+</div>
+
+<div class="div-button">
+  <input type="text" [(ngModel)]="hero.name" class="form-controle m-1" placeholder="name">
+  <input type="text" [(ngModel)]="hero.power" class="form-controle m-1" placeholder="power">
+  <input type="text" [(ngModel)]="hero.url" class="form-controle m-1" placeholder="url">
+  <button (click)="ajoute()" type="menu" class="btn btn-danger">create</button>
+</div>
+
+<div class="father">
+  <div class="first" *ngFor="let i of heros">
+    <div [ngClass]="{'cart':true,'bg-danger':i.power>10,'bg-success':i.power<10}">
+      <div class="img">
+        <img [src]="i.url" alt="{{i.name}}">
+      </div>
+      <div class="power">
+        <h1>{{i.name}}</h1>
+        <p>{{i.power}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
