@@ -6,7 +6,7 @@
   <input type="text" [(ngModel)]="hero.name" class="form-controle m-1" placeholder="name">
   <input type="text" [(ngModel)]="hero.power" class="form-controle m-1" placeholder="power">
   <input type="text" [(ngModel)]="hero.url" class="form-controle m-1" placeholder="url">
-  <button (click)="ajoute()" type="menu" class="btn btn-danger">create</button>
+  <button  [disabled]="hero.name === '' || hero.power === 0 || hero.url===''"  (click)="ajoute()" type="menu" class="btn btn-danger">create</button>
 </div>
 
 <div class="father">

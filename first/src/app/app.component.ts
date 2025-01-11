@@ -18,7 +18,7 @@ export class AppComponent {
 
  hero={
   name:"",
-  power:"",
+  power:0,
   url:""
  }
  heros: any[]=[]
@@ -26,7 +26,7 @@ export class AppComponent {
   this.heros.push(this.hero)
   this.hero={
     name:"",
-    power:"",
+    power:0,
     url:""
    }
  }
